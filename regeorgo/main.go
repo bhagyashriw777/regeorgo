@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/bhagyashriw777/regeorgo"
 	"net/http"
-	"github.com/kost/regeorgo"
 )
 
 func main() {
@@ -14,4 +14,3 @@ func main() {
 	http.HandleFunc("/regeorgo", gh.RegHandler)
 	http.ListenAndServe(":8111", nil)
 }
-
